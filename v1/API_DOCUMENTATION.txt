@@ -1,0 +1,11 @@
+
+1. SIGNUP
+
+Description : This api is used to sign up parent Member (Master Member) to the APP....
+
+URL :
+METHOD :
+REQUEST :
+RESPONSE :
+
+--------------------------------------------------------------------------------------
