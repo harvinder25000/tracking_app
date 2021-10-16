@@ -6,6 +6,7 @@ Description : This api is used to sign up parent Member (Master Member) to the A
 URL :
 METHOD :
 REQUEST :
-RESPONSE :
+RESPONSE : 
+
 
 --------------------------------------------------------------------------------------
