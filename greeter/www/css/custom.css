@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,700,900');
+
+body{font-family: 'Roboto', sans-serif;}
+
+.navbar{background:#fff; height: 90px;}
+.navbar-inner{height:90px;}
+.navbar ~ * .page:not(.no-navbar) .page-content, .navbar ~ .page:not(.no-navbar) .page-content, .navbar ~ .page-content, .navbar ~ :not(.page) .page-content{padding-top:90px;}
+
+.main-home-page{padding:25px;}
+.main-home-page .staff-login-btn{justify-content: space-between;
+    display: flex;}
+.main-home-page .staff-login-btn a{font-size: 14px; color: #fff; background: rgba(0,0,0,0.2); padding: 6px 10px; border-radius: 3px; text-transform: uppercase;}
+.main-home-page .main-title h3{color:#fff; font-size: 18px; line-height: 21px; text-align: center; font-weight: 500; max-width: 70%; margin: auto; text-transform: uppercase; margin-top: 50px;}
+.main-home-page .main-description{color:#fff; font-size: 16px; font-weight: 300; text-align: center;}
+.main-home-page .home-form{margin:40px 0px 60px 0px;}
+.main-home-page .home-form form{}
+.main-home-page .home-form form .inputfield-row{position: relative; margin: 0px 0px 12px 0px;}
+.main-home-page .home-form form .inputfield-row i{position: absolute; font-size: 15px; top: 50%; margin: -8px 0px 0px 10px; color: #ccc;}
+.main-home-page .home-form form .inputfield-row input[type="text"],.main-home-page .home-form form .inputfield-row select{background: #fff; padding: 17px 17px 17px 30px; width: 100%; border-radius: 3px; color: #777; box-sizing: border-box; border: 0px;}
+.main-home-page .home-form form .inputfield-row input[type="email"]{background: #fff; padding: 17px 17px 17px 30px; width: 100%; border-radius: 3px; color: #777; box-sizing: border-box; border: 0px;}
+.main-home-page .home-form form .inputfield-row input[type="phone"]{background: #fff; padding: 17px 17px 17px 30px; width: 100%; border-radius: 3px; color: #777; box-sizing: border-box; border: 0px;}
+.main-home-page .home-form form .inputfield-row input[type="password"]{background: #fff; padding: 17px 17px 17px 30px; width: 100%; border-radius: 3px; color: #777; box-sizing: border-box; border: 0px;}
+.main-home-page .home-form form .inputbutton-row{text-align: center; color: #fff; margin-top: 50px;}
+.main-home-page .home-form form .inputbutton-row button{background: #e4b600; padding: 13px 25px; border-radius: 50px; border: 0px; color:#fff; text-transform: uppercase; font-size: 20px; height: auto; display: inline-block; width: auto; margin: 10px; font-weight: 500;}
+.main-home-page .home-form form .inputbutton-row button:hover{background: #f5c816;}
+.main-home-page .bottom-row{background: rgba(0,0,0,0.2); padding: 20px; text-align: center; color: #fff; margin: 0px -25px;}
+
+
+ .footer {background-color:#0040ff; position: absolute;bottom: 0px;z-index:999999;width:100%;color:white;text-align:center;}
+ .footer a{color:white;} 
+        /*css foe signup page*/
+
+ .required_field{
+ 	border: 2px solid red !important;
+ }

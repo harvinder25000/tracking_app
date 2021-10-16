@@ -1,0 +1,41 @@
+<div class="page" data-name="finduser">
+    
+    <div class="navbar">
+    <div class="navbar-inner sliding">
+      <div class="left">
+        <a onclick="fillDropDown()" href="/" class="link">
+          <i class="icon icon-back"></i>
+          <span class="ios-only">Back</span>
+        </a>
+      </div>
+        
+      <div class="title"><img src="img/logo.png"/></div>
+      <!--<div class="title-large">
+        <div class="title-large-text">About</div>
+      </div>-->
+    </div>
+  </div>
+  <div class="page-content">
+  <div class="main-inner-wrapper finduserpage">
+  <div class="block-header"><h3>Lets see if we can find<br> you in the system</h3>
+  <h3>Please enter in your postal code and<br> then look for your name</h3>
+  </div>
+  <div class="frmSearch">
+	<div class="inputfield-row">
+	    <input id="user_search_box" type="text" placeholder="Enter Postal Code" class="input-with-value" style="padding:5px;text-align:center;width:100%"></div>
+	
+	<div id="suggesstion-box"></div>
+	<button onclick="appUserSearch();" style="background-color:#0040ff;color:white;font-weight;bold;margin-top:0;padding:5px;"  >Submit</button>
+</div>
+ </div>
+</div>
+</div>
+<style>
+.finduserpage {
+    padding: 0 25px;
+}
+.finduserpage .block-header{
+    padding:12px 0px;
+}
+
+</style>

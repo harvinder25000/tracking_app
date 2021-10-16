@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<widget xmlns   = "http://www.w3.org/ns/widgets"
+  id          = "com.phonegap.example"
+  versionCode = "10"
+  version     = "1.0.0" >
+
+  <!-- versionCode is optional and Android only -->
+  <name>Opal Museum</name>
+
+  <description>
+    With stunning settings and opal of every size and shape, at Brisbane Opal Museum you'll be surrounded by the largest range of solid and natural opal jewellery.
+  </description>
+
+  <author href="https://build.phonegap.com" email="support@phonegap.com">
+    Geoff
+  </author>
+
+  <platform name="ios" />
+  <platform name="android" />
+  <platform name="winphone" />
+
+  <!-- We'll include the Barcode plugin as an example -->
+  <plugin name="cordova-plugin-device" spec="~2.0.2" />
+  <plugin name="cordova-plugin-whitelist" spec="~1.3.3" />
+</widget>

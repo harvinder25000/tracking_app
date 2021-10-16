@@ -1,0 +1,36 @@
+<div class="page" data-name="userDetailsPage">
+  <div class="navbar">
+    <div class="navbar-inner sliding">
+      <div class="left">
+        <a onclick="fillDropDown()" href="/list/" class="link">
+          <i class="icon icon-back"></i>
+          <span class="ios-only">Back</span>
+        </a>
+      </div>
+        
+      <div class="title"><img src="img/logo.png"/></div>
+      <!--<div class="title-large">
+        <div class="title-large-text">About</div>
+      </div>-->
+    </div>
+  </div>
+  <div class="page-content userDetailsListing">
+    <div style="color: rgb(255, 255, 255); margin-top: 10px;" class="block-title">Updates User Details Below</div>
+    <div class="list user-detail-list">
+      <ul id="detailsdiv"></ul>
+      <br/>
+      <br/>
+
+
+      <button style="padding:1.5% ; margin-top:0.5%" id="make_user_vip_btn" type="button" onclick="javascript:make_user_vip(this.id)" >VIP MEMBER</button>
+
+      <button style="padding:1.5% ; margin-top:0.5%" id="make_user_non_vip_btn" type="button" onclick="javascript:make_user_non_vip(this.id)" >NON VIP MEMBER</button>
+
+      <button style="padding:1.5% ; margin-top:0.5%" id="make_user_exclude_btn" type="button" onclick="javascript:make_user_exclude(this.id)">EXCLUDE</button>
+      
+       <button style="padding:1.5% ; margin-top:0.5%;display:none" id="make_user_made_another_purchase_btn" type="button" onclick="javascript:make_user_made_another_purchase(this.id)">MADE ANOTHER PURCHASE</button>
+    </div>
+  </div>
+</div>
+
+
