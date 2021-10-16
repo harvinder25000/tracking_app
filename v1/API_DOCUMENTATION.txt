@@ -11,3 +11,12 @@ RESPONSE :
 
 
 --------------------------------------------------------------------------------------
+
+2. LOGIN
+
+Description : This api is used to login all types of members to app.....
+
+URL :
+METHOD :
+REQUEST :
+RESPONSE : 
