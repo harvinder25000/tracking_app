@@ -5,7 +5,7 @@
     $data = json_decode(file_get_contents('php://input'), true);
   
     $username=$data['username'];
-    $password=md5($data['password']);
+    $password=$data['password'];
   
 	$sql = "SELECT * from users where ( email='".$username."' OR phone='".$username."') AND password='".$password."'";
 	$result = $conn->query($sql);
@@ -28,7 +28,6 @@ if ($result->num_rows > 0) {
         echo json_encode($responseObj);
 		exit;
 }
-$conn->close();
- 
+$conn->close(); 
 ?>
 

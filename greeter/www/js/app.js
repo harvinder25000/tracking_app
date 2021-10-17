@@ -170,13 +170,14 @@ if(document.getElementById("password").value!=document.getElementById("cpassword
 
 
 function login(){   
+ 
  console.log('Login ApI');
- var firstname=document.getElementById("username").value;
-var lastname=document.getElementById("password").value;
+var firstname=document.getElementById("username").value;
+var password1=document.getElementById("password_login").value;
 
-
+ 
 jQuery('#username').removeClass('required_field');
-jQuery('#password').removeClass('required_field');
+jQuery('#password_login').removeClass('required_field');
 
 var valid='yes';
 if(username==""){
@@ -184,8 +185,8 @@ if(username==""){
 	valid='no';
 }
 
-if(password==""){
-	jQuery('#password').addClass('required_field');
+if(password1==""){
+	jQuery('#password_login').addClass('required_field');
 	valid='no';
 }
 
@@ -193,8 +194,8 @@ if(valid=='no'){
 	return false;
 }
  var d={};
- d["username"]=document.getElementById("username").value;
- d["password"]=document.getElementById("password").value;
+ d["username"]=username;
+ d["password"]=password1;
 
 
   var settings = {
@@ -213,19 +214,16 @@ if(valid=='no'){
   }
 
   jQuery.ajax(settings).done(function(response) {
-    alert(response.status);
+   
 
-    if (response.status == 'success') {        
-        localStorage.setItem('userData', JSON.stringify(response.data[0]));
-       app.router.navigate('/panel/'); //redirection to new page
-       
+    if (response.status == 'success') { 
+       app.router.navigate('/panel/'); //redirection to new page       
     } 
-
     else {
         // Create toast with icon
         var toastIcon = app.toast.create({
           icon: '<a><i class="f7-icons">close_round_fill</i></a>',
-          text:  response.message,
+          text:  response.message,  
           position: 'center',
           closeTimeout: 2000,
         });

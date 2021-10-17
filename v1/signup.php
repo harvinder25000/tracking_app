@@ -12,7 +12,7 @@
     $latitude="";
     
    $sql = "INSERT INTO users (parent_id, first_name, last_name, email, `password`, `cpassword`, phone, longitude, latitude )
-    VALUES ('','".$first_name."', '".$last_name."', '".$email."', '".md5($password)."', '".$cpassword."', '".$phone."', '', '')";
+    VALUES ('','".$first_name."', '".$last_name."', '".$email."', '".$password."', '".$cpassword."', '".$phone."', '', '')";
 
     if ($conn->query($sql) === TRUE) {
         $dataArray=array();	  
