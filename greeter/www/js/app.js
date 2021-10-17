@@ -172,16 +172,16 @@ if(document.getElementById("password").value!=document.getElementById("cpassword
 function login(){   
  
  console.log('Login ApI');
-var firstname=document.getElementById("username").value;
+var username=document.getElementById("username_login").value;
 var password1=document.getElementById("password_login").value;
 
  
-jQuery('#username').removeClass('required_field');
+jQuery('#username_login').removeClass('required_field');
 jQuery('#password_login').removeClass('required_field');
 
 var valid='yes';
 if(username==""){
-	jQuery('#username').addClass('required_field');
+	jQuery('#username_login').addClass('required_field');
 	valid='no';
 }
 
@@ -197,7 +197,7 @@ if(valid=='no'){
  d["username"]=username;
  d["password"]=password1;
 
-
+alert(username);
   var settings = {
     "async": true,
     "crossDomain": true,
@@ -217,7 +217,7 @@ if(valid=='no'){
    
 
     if (response.status == 'success') { 
-       app.router.navigate('/panel/'); //redirection to new page       
+       app.router.navigate('/smart-select/'); //redirection to new page       
     } 
     else {
         // Create toast with icon
