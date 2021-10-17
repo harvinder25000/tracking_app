@@ -7,7 +7,7 @@
       <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
       <meta name="theme-color" content="#2196f3">
       <meta http-equiv="Content-Security-Policy" content="default-src * 'self' 'unsafe-inline' 'unsafe-eval' data: gap:">
-      <title>Locate Close app</title>
+      <title>Locate Close app Login</title>
       <link rel="stylesheet" href="css/framework7.bundle.css">
       <link rel="stylesheet" href="css/app.css?ver=9.0.1">
       <link rel="stylesheet" href="css/custom.css?ver=2">
@@ -39,36 +39,25 @@
                      <div class="main-home-page">
                         
                         <div class="main-title">
-                           <h3 style="margin-top:1%">Signup</h3>
+                           <h3 style="margin-top:1%">Login</h3>
                         </div>
                         <div class="home-form">
                            <form name="member-signup" id="signupform" action="" method="POST">
                               
 							  <div class="inputfield-row">
 							  <i class="fa fa-user" aria-hidden="true"></i>
-							  <input name="first_name" id="first_name" type="text" placeholder="First Name"></div>
-
-							  <div class="inputfield-row"><i class="fa fa-user" aria-hidden="true"></i>
-                              <input name="last_name" id="last_name" type="text" placeholder="Last Name"></div>
-							  
-                              <div class="inputfield-row"><i class="fa fa-envelope" aria-hidden="true"></i>
-                              <input name="email" id="email" type="text" placeholder="Email"></div>
-
-                              <div class="inputfield-row"><i class="fa fa-phone" aria-hidden="true"></i>
-                              <input name="phone" id="phone" type="text" placeholder="Phone"></div>
+							  <input name="email_phone" id="email_phone" type="text" placeholder="Email/Phone"></div>
 
 							  <div class="inputfield-row"><i class="fa fa-key" aria-hidden="true"></i><input
                                  name="password" id="password" type="text" placeholder="Password"></div>
                                
-                               <div class="inputfield-row"><i class="fa fa-key" aria-hidden="true"></i><input
-                                 name="cpassword" id="cpassword" type="text" placeholder="Confirm Password"></div>
+                               
                               <div class="inputbutton-row">
                                  <button
                                     style="background-color:#0040ff;color:white;font-weight;bold;margin-top:0;"
                                     data-value="non_vip" type="button"
-                                    onclick="javascript:signup(this)" 
-                                    class="col button button-small button-round button-fill">Signup</button><br>
-                                    <a href="/login-screen-page/">Login</a>
+                                    onclick="javascript:login(this)" 
+                                    class="col button button-small button-round button-fill">Login</button><br>
                                  <!--<span>OR</span><br><button data-value="vip" onclick="javascript:MemberSignUpAction(this)" type="button" class="col button button-small button-round button-fill">Other</button>-->
                               </div>
                               

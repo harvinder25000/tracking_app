@@ -5,6 +5,11 @@ var routes = [
     url: './index.html',
     name: 'home',
   },
+  {
+    path: 'login',
+    url: './pages/login-screen-page.html',
+    name: 'login',
+  },
   // About page
   {
     path: '/about/',
