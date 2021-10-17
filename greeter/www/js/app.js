@@ -169,6 +169,70 @@ if(document.getElementById("password").value!=document.getElementById("cpassword
 }
 
 
+function login(){   
+ 
+ console.log('Login ApI');
+var username=document.getElementById("username_login").value;
+var password1=document.getElementById("password_login").value;
+
+ 
+jQuery('#username_login').removeClass('required_field');
+jQuery('#password_login').removeClass('required_field');
+
+var valid='yes';
+if(username==""){
+	jQuery('#username_login').addClass('required_field');
+	valid='no';
+}
+
+if(password1==""){
+	jQuery('#password_login').addClass('required_field');
+	valid='no';
+}
+
+if(valid=='no'){
+	return false;
+}
+ var d={};
+ d["username"]=username;
+ d["password"]=password1;
+
+alert(username);
+  var settings = {
+    "async": true,
+    "crossDomain": true,
+    "url": baseUrl+"login.php",
+   "method": "POST", //GET | POST
+  "headers": {
+    "content-type": "application/json",
+    "authorization": "Bearer a3sPILiY1472fnfr0na5v9sXGu7R",
+    "cache-control": "no-cache",
+    "postman-token": "ee77e197-ba28-2405-0c4f-aec558c89b5a"
+  },
+     "processData": false,
+  "data": JSON.stringify(d)
+  }
+
+  jQuery.ajax(settings).done(function(response) {
+   
+
+    if (response.status == 'success') { 
+       app.router.navigate('/smart-select/'); //redirection to new page       
+    } 
+    else {
+        // Create toast with icon
+        var toastIcon = app.toast.create({
+          icon: '<a><i class="f7-icons">close_round_fill</i></a>',
+          text:  response.message,  
+          position: 'center',
+          closeTimeout: 2000,
+        });
+        toastIcon.open();
+    }
+	
+	
+  });
+}
 
 
 
