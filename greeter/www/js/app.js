@@ -176,29 +176,29 @@ var username=document.getElementById("username_login").value;
 var password1=document.getElementById("password_login").value;
 
  
+ 
 jQuery('#username_login').removeClass('required_field');
 jQuery('#password_login').removeClass('required_field');
-
+ 
 var valid='yes';
 if(username==""){
 	jQuery('#username_login').addClass('required_field');
 	valid='no';
 }
-
+ 
 if(password1==""){
 	jQuery('#password_login').addClass('required_field');
 	valid='no';
 }
-
+ 
 if(valid=='no'){
 	return false;
 }
+ 
  var d={};
  d["username"]=username;
  d["password"]=password1;
-
-alert(username);
-  var settings = {
+ var settings = {
     "async": true,
     "crossDomain": true,
     "url": baseUrl+"login.php",
