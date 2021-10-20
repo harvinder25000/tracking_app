@@ -3,7 +3,7 @@
     error_reporting(0);
     include('includes/config.php'); 
     $data = json_decode(file_get_contents('php://input'), true);
-  
+    
     $first_name=$data['first_name'];
     $last_name=$data['last_name'];
     $email=$data['email'];

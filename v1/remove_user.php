@@ -4,32 +4,24 @@
     include('includes/config.php'); 
     $data = json_decode(file_get_contents('php://input'), true);
   
-    $first_name=$data['first_name'];
-    $last_name=$data['last_name'];
     $email=$data['email'];
-    $phone=$data['phone'];
-    $longitude="";
-    $latitude="";
-    
-   $sql = "INSERT INTO users (parent_id, first_name, last_name, email, `password`, `cpassword`, phone, longitude, latitude )
-    VALUES ('','".$first_name."', '".$last_name."', '".$email."', '".$password."', '".$cpassword."', '".$phone."', '', '')";
 
-    if ($conn->query($sql) === TRUE) {
-        $dataArray=array();	  
-        $responseObj = new stdClass();
-        $responseObj->status = 'success';
-        $responseObj->message = 'Registration Successfull';
-        $responseObj->data = $dataArray; 	  
-        echo json_encode($responseObj);
-
-    } else {  
-        $dataArray=array();	  
-        $responseObj = new stdClass();
-        $responseObj->status = 'failed';
-        $responseObj->message = 'Email Already Exist';
-        $responseObj->data = $dataArray; 	  
-        echo json_encode($responseObj);
-
+    $ids = "SELECT `id` FROM `users` WHERE `email`= $email";
+    $deletequery = "DELETE from `users` where id=$ids";
+    $query = mysqli_query($con, $deletequery);
+    if($query){
+        ?>
+        <script>
+        alert('Deleted successfully');
+        </script>
+        <?php
+        header('location:select.php');
+    }else{
+        ?>
+        <script>
+        alert('Not Deleted');
+        </script>
+        <?php
     }
 
 	 exit;
