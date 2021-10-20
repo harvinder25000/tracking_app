@@ -176,19 +176,31 @@ var username=document.getElementById("username_login").value;
 var password1=document.getElementById("password_login").value;
 
  
+<<<<<<< HEAD
 jQuery('#username_login').removeClass('required_field');
 jQuery('#password_login').removeClass('required_field');
 
+=======
+ 
+jQuery('#username_login').removeClass('required_field');
+jQuery('#password_login').removeClass('required_field');
+ 
+>>>>>>> 960bdba489a0c511a7d16c7ce34bd81bd4a11b03
 var valid='yes';
 if(username==""){
 	jQuery('#username_login').addClass('required_field');
 	valid='no';
 }
+<<<<<<< HEAD
 
+=======
+ 
+>>>>>>> 960bdba489a0c511a7d16c7ce34bd81bd4a11b03
 if(password1==""){
 	jQuery('#password_login').addClass('required_field');
 	valid='no';
 }
+<<<<<<< HEAD
 
 if(valid=='no'){
 	return false;
@@ -199,6 +211,17 @@ if(valid=='no'){
 
 alert(username);
   var settings = {
+=======
+ 
+if(valid=='no'){
+	return false;
+}
+ 
+ var d={};
+ d["username"]=username;
+ d["password"]=password1;
+ var settings = {
+>>>>>>> 960bdba489a0c511a7d16c7ce34bd81bd4a11b03
     "async": true,
     "crossDomain": true,
     "url": baseUrl+"login.php",
