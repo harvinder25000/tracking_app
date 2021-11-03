@@ -17,7 +17,24 @@ var routes = [
     name: 'about',
   },
  
- 
+   {
+    path: '/members-list/',
+    url: './pages/members-list.html',
+    name: 'members-list',
+  },
+
+    {
+    path: '/add-member-page/',
+    url: './add-member-page.html',
+    name: 'add-member-page',
+  },
+
+  {
+    path: '/add-member-success/',
+    url: './add-member-success.html',
+    name: 'add-member-success',
+  },
+
  {
     path: '/teachers-login/',
     url: './pages/teachers-login.html',

@@ -1,38 +1,89 @@
 <template>
   <div class="page no-toolbar no-navbar no-swipeback">
-    <div class="page-content login-screen-content">
-      <div class="login-screen-title">Login</div>
-      <form>
+    
+<div class="main-title">
+                           <h3 style="margin-top:1%">Signup</h3>
+                        </div>
+                        <div class="home-form">
+                           <form>
         <div class="list">
           <ul>
             <li class="item-content item-input item-input-with-value">
               <div class="item-inner">
-                <div class="item-title item-label">Username</div>
+                <div class="item-title item-label">First Name</div>
                 <div class="item-input-wrap">
-                  <input type="text" placeholder="Username/Phone" id="username_login" name="username_login">
+                  <input type="text"  id="first_name" name="first_name">
                   <span class="input-clear-button"></span>
                 </div>
               </div>
             </li>
-            <li class="item-content item-input">
+
+            <li class="item-content item-input item-input-with-value">
               <div class="item-inner">
-                <div class="item-title item-label">Password</div>
+                <div class="item-title item-label">Last name</div>
                 <div class="item-input-wrap">
-                  <input type="password" placeholder="Password" id="password_login" name="password_login" >
+                  <input type="text"  id="last_name" name="last_name">
+                  <span class="input-clear-button"></span>
                 </div>
               </div>
             </li>
+
+            <li class="item-content item-input item-input-with-value">
+              <div class="item-inner">
+                <div class="item-title item-label">Email</div>
+                <div class="item-input-wrap">
+                  <input type="text" id="email" name="email">
+                  <span class="input-clear-button"></span>
+                </div>
+              </div>
+            </li>
+
+            <li class="item-content item-input item-input-with-value">
+              <div class="item-inner">
+                <div class="item-title item-label">Password</div>
+                <div class="item-input-wrap">
+                  <input type="text" id="password" name="password">
+                  <span class="input-clear-button"></span>
+                </div>
+              </div>
+            </li>
+
+
+            <li class="item-content item-input">
+              <div class="item-inner">
+                <div class="item-title item-label">Confirm Password</div>
+                <div class="item-input-wrap">
+                  <input type="password" id="cpassword" name="cpassword" >
+                </div>
+              </div>
+            </li>
+
+
           </ul>
         </div>
         <div class="list">
-          <ul>
-            <li><a href="#" class="list-button" onclick="login(this)">Sign In</a></li>
-          </ul>
-          <div class="block-footer">Harvinder Singh's Tracking App<br>Copyrights reserved by Harvinder Singh </div>
+          
+<ul>
+          <button
+                                    style="background-color:#0040ff;color:white;font-weight;bold;margin-top:0;"
+                                    data-value="non_vip" type="button"
+                                    onclick="signup(this)" >Login
+                                   </button><br>
+                                   
+                                  </ul>
+
+         
         </div>
       </form>
-    </div>
-  </div>
 </template>
 
 <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+
+
+
+
+
+
+
+
+                                    
